@@ -2,6 +2,6 @@
 layout: page
 title: projects
 comments: false
-permalink: projects
+permalink: /projects/
 ---
 Under construction!
