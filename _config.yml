@@ -20,3 +20,6 @@ github_username:  mariolopjr
 
 # Build settings
 markdown: kramdown
+
+# Exclude vendor cache
+exclude: [vendor]
