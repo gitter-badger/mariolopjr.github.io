@@ -20,10 +20,10 @@ pages:
   only:
   - master
 
-development:
-  stage: development
+test:
+  stage: test
   script:
-    - bundle exec jekyll build -d development/
+    - bundle exec jekyll build -d test/
   artifacts:
     paths:
       - test
