@@ -7,4 +7,4 @@ services:
     ports:
       - "4000:4000"
     volumes:
-      - /Users/Mario/Sites/techmunchies.gitlab.io:/srv/jekyll
+      - .:/srv/jekyll
