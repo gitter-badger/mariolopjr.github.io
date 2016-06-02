@@ -10,9 +10,7 @@ title: ///---
 name: techmunchies
 email: mario@techmunchies.net
 description: > # this means to ignore newlines until "baseurl:"
-  ///---
-  techmunchies
-  Developer and IT Services
+  take a byte
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://techmunchies.net" # the base hostname & protocol for your site
 twitter_username: techmunchies
