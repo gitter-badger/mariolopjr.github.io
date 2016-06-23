@@ -62,8 +62,17 @@ a:hover {
 
 .masthead-brand {
   margin-bottom: 0;
-  width: 2rem;
-  height: 2rem;
+  text-decoration: none !important;
+  color: #8b8c8e;
+
+  &:hover {
+      background-color: #969eac;
+  }
+}
+
+.masthead-brand > img {
+    width: 2rem;
+    height: 2rem;
 }
 
 .nav-masthead .nav-link {
