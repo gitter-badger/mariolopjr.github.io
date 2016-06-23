@@ -13,10 +13,16 @@ dl, dd, ol, ul, figure {
 /**
  * Basic styling
  */
+html,
+body {
+    height: 100%;
+    background-color: $background-color;
+}
 body {
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
     color: $text-color;
-    background-color: $background-color;
+    text-align: center;
+    text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
     -webkit-text-size-adjust: 100%;
     -webkit-font-feature-settings: "kern" 1;
     -moz-font-feature-settings: "kern" 1;
