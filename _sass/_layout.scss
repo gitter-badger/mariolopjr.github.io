@@ -89,12 +89,12 @@
 }
 
 @media (min-width: 48em) {
-  .masthead-brand {
-    float: left;
-  }
-  .nav-masthead {
-    float: right;
-  }
+    .masthead-brand {
+        float: left;
+    }
+    .nav-masthead {
+        float: right;
+    }
 }
 
 
@@ -230,5 +230,20 @@
         @include media-query($on-laptop) {
             font-size: 18px;
         }
+    }
+}
+
+/* Responsive Design */
+@include media-query($on-palm) {
+    .masthead-brand {
+        width: 600px;
+        text-align: center;
+    }
+    .masthead-brand > img {
+        width: 1rem;
+        height: 1rem;
+    }
+    .nav-masthead {
+        float: right;
     }
 }
