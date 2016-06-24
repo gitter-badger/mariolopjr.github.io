@@ -92,6 +92,38 @@
     color: #fff;
 }
 
+.color-switch {
+    position: relative;
+    float: right;
+    top: 5px;
+    right: 5px;
+    display: none;
+}
+
+#projects tr {
+    &:hover {
+        color: $brand-color;
+        text-decoration: none;
+        background-color: $background-link-hover;
+    }
+
+    a:hover {
+        background-color: inherit;
+
+        i {
+            color: $background-color;
+        }
+    }
+}
+
+.icon {
+    size: 1rem;
+
+    .icon-html {
+        content: url("imgs/icons/icon-5-file-html.svg");
+    }
+}
+
 @media (min-width: 48em) {
     .masthead-brand {
         float: left;
