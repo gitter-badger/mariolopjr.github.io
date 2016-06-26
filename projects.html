@@ -7,22 +7,37 @@ permalink: /projects/
 <div class="row">
     <div class="col-md-12">
         <div class="col-md-4">
-            Project filter selector
+            &nbsp;
         </div>
         <div class="col-md-8">
             <div class="projects-container">
                 <table id="projects" class="table table-hover">
                     <tbody>
+                        {% for project in site.data.projects %}
                         <tr>
                             <td>
-                                West Point Real Estate<br />
-                                <i class="icon icon-html fa-white" aria-hidden="true"></i>
+                                {{ project.name }}<br />
+                                {% if project.file_types contains "php" %}
+                                <img src="/imgs/icons/icon-21-file-php.svg" class="icon icon-html fa-white" aria-hidden="true"></img>
+                                {% endif %}
+
+                                {% if project.file_types contains "html" %}
+                                <img src="/imgs/icons/icon-11-file-html.svg" class="icon icon-html fa-white" aria-hidden="true"></img>
+                                {% endif %}
                             </td>
                             <td>
-                                <a href="http://westpointrealtors.com" target="_blank"><i class="fa fa-white fa-external-link" aria-hidden="true"></i></a>
-                                <!--<a href="http://gitlab.com/u/techmunchies" target="_blank"><i class="fa fa-white fa-gitlab" aria-hidden="true"></i></a>-->
+                                {% if project.type == "site" %}
+                                <a href="{{ project.url }}" target="_blank"><i class="fa fa-white fa-external-link" aria-hidden="true"></i></a>
+                                {% endif %}
+
+                                {% if project.gitlab_url %}
+                                <a href="http://gitlab.com/techmunchies/{{ project.gitlab_url }}" target="_blank"><i class="fa fa-white fa-gitlab" aria-hidden="true"></i></a>
+                                {% endif %}
+                                <br />
+                                {{ project.year }}
                             </td>
                         </tr>
+                        {% endfor %}
                     </tbody>
                 </table>
             </div>
