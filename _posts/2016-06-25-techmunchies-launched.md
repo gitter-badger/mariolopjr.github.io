@@ -1,5 +1,5 @@
 ---
-title: techmunchies, co. website launched!
+title: techmunchies website launched!
 authors:
 - Mario
 layout: post
