@@ -6,7 +6,10 @@ permalink: /blog/
 ---
 
 {% for post in site.posts %}
-  * {{ post.date | date_to_string }} &raquo; [ {{ post.title }} ]({{ site.url }}{{ post.url }})
+{{ post.date | date_to_string }} &raquo; <a class="nav-link active" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 {% endfor %}
 
-Subscribe to the <a href="./feed.xml">RSS feed</a> for new blog posts.
+<br />
+<br />
+<br />
+//-- Subscribe to the <a href="./feed.xml">RSS feed</a> for new blog posts. --//
