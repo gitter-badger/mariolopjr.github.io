@@ -1,0 +1,13 @@
+- name: West Point Real Estate
+  type: site
+  url: http://westpointrealtors.com
+  gitlab_url:
+  file_types: [php, html]
+  year: 2016
+
+- name: techmunchies
+  type: site
+  url: http://techmunchies.net
+  gitlab_url: techmunchies.gitlab.io
+  file_types: [html]
+  year: 2016

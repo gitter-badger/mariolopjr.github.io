@@ -16,6 +16,9 @@ url: "http://techmunchies.net" # the base hostname & protocol for your site
 twitter_username: techmunchies
 gitlab_username: techmunchies
 
+# Add plugins to site
+gems: [jekyll_reading_time]
+
 # Build settings
 markdown: kramdown
 

@@ -1,0 +1,12 @@
+---
+layout: page2
+title: blog
+comments: false
+permalink: /blog/
+---
+
+<div class="posts">
+{% for post in site.posts %}
+{{ post.date | date_to_string }} <i class="fa fa-chevron-right" aria-hidden="true"></i> <a class="nav-link active" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+{% endfor %}
+</div>
