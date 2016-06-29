@@ -30,8 +30,8 @@ permalink: /projects/
                                 <a href="{{ project.url }}" target="_blank"><i class="fa fa-white fa-external-link" aria-hidden="true"></i></a>
                                 {% endif %}
 
-                                {% if project.gitlab_url %}
-                                <a href="http://gitlab.com/techmunchies/{{ project.gitlab_url }}" target="_blank"><i class="fa fa-white fa-gitlab" aria-hidden="true"></i></a>
+                                {% if project.github_url %}
+                                <a href="http://github.com/{{ site.github_username }}/{{ project.github_url }}" target="_blank"><i class="fa fa-white fa-github" aria-hidden="true"></i></a>
                                 {% endif %}
                                 <br />
                                 {{ project.year }}
