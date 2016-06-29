@@ -1,13 +1,13 @@
 - name: West Point Real Estate
   type: site
   url: http://westpointrealtors.com
-  gitlab_url:
+  github_url:
   file_types: [php, html]
   year: 2016
 
 - name: techmunchies
   type: site
-  url: http://techmunchies.net
-  gitlab_url: techmunchies.gitlab.io
+  url: https://techmunchies.net
+  github_url: mariolopjr.github.io
   file_types: [html]
   year: 2016
